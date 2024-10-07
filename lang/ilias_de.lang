@@ -1,2 +1,6 @@
-cron_description#:#Records the number of users who have logged in each day.
+cron_description#:#Zeichnet die Anzahl der Benutzer auf, die sich täglich angemeldet haben.
 gui_title#:#Einstellungen
+usr_statistics#:#Benutzerstatistik
+configuration#:#Konfiguration
+email_recipient_info#:#E-Mail-Empfänger
+save#:#Speichern

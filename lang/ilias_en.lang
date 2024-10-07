@@ -1,3 +1,7 @@
 cron_description#:#Records the number of users who have logged in each day.
 gui_title#:#Settings
+usr_statistics#:#User Statistics
+configuration#:#Configuration
+email_recipient_info#:#Email recipient
+save#:#Save
 

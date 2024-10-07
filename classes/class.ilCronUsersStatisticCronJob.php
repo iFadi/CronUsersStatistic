@@ -6,7 +6,7 @@ class ilCronUsersStatisticCronJob extends ilCronJob
 {
     public function getId() : string
     {
-        return "cronusersstatistic";
+        return "crn_usr_statistics";
     }
 
     public function getTitle() : string
@@ -67,7 +67,7 @@ class ilCronUsersStatisticCronJob extends ilCronJob
 
     public function hasFlexibleSchedule(): bool
     {
-        return true;
+        return false;
     }
 
     public function getDefaultScheduleType(): int

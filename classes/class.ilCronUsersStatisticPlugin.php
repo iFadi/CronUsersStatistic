@@ -20,7 +20,7 @@
 
 class ilCronUsersStatisticPlugin extends ilCronHookPlugin
 {
-    const PLUGIN_ID = 'cronusersstatistic';
+    const PLUGIN_ID = 'crn_usr_statistics';
     const PLUGIN_NAME = 'CronUsersStatistic';
 
     private static ?ilCronUsersStatisticPlugin $instance = null;
@@ -72,5 +72,12 @@ class ilCronUsersStatisticPlugin extends ilCronHookPlugin
         if ($ilDB->tableExists('crn_usr_settings')) {
             $ilDB->dropTable("crn_usr_settings");
         }
+
+        // Delete the cron job entry for the plugin from the cron_job table
+        $ilDB->manipulateF(
+            "DELETE FROM cron_job WHERE job_id = %s",
+            array("text"),
+            array('crn_usr_statistics')
+        );
     }
 }

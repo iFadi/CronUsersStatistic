@@ -122,7 +122,7 @@ class ilCronUsersStatisticConfigGUI extends ilPluginConfigGUI
     {
         global $tpl;
 
-        $this->tpl->setTitle($this->lng->txt("User Statistics"));
+        $this->tpl->setTitle($this->lng->txt("usr_statistics"));
 
         // Query the database to get statistics data
         $query = "SELECT * FROM crn_usr_statistics ORDER BY stat_date DESC";
